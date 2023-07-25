@@ -1,0 +1,283 @@
+.sidenavbar{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    background: #1a1a1a;
+    color: #ccc;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    .sidenavbar-top{
+        flex: 1;
+        .sidenavbar-top-profile{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:15px 13px 10px 13px;
+
+
+            .top-profile{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .profile-icon{
+                    background: #be9548;
+                    width: 28px;
+                    height: 28px;
+                    border-radius: 50%;
+                    color: #fff;
+                    font-weight: 400;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .profile-title{
+                    display: flex;
+                    align-items: center;
+                    flex: 1;
+                    margin-left: 10px;
+                    .title{
+                        font-size: 13.7px;
+                        cursor: pointer;
+                        color: rgba($color: #fff, $alpha: 0.77);
+                    &:hover{
+                        color: #fff;
+                    }
+                    }
+                    .icon{
+                        margin: 0 10px;
+                        font-size: 10px;
+                        font-weight: 200;
+                    }
+                }
+            }
+            .setting{
+            
+                font-size: 18px;
+                cursor: pointer;
+            }
+        }
+        .sidenavbar-top-search{
+            // border: 1px solid red;
+            padding: 8px 13px;
+            .search-block{
+                // border: 1px solid red;
+                display: flex;
+                align-items: center;
+                background: #404040;
+                padding: 10px 12px;
+                border-radius: 50px;
+                }
+                .icon{
+                    font-size: 15px;
+                    line-height: 24px;
+                }
+                input{
+                    color: #fff;
+                    margin-left: 8px;
+                    background: none;
+                    outline: none;
+                    border: none;
+                    font-weight: 300;
+                }
+            }
+        }
+        .sidenavbar-top-create-note{
+            padding:2px 13px;
+            color: #fff;
+            .create-note-btn{
+                // bordeR: 1px solid red;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 12px;
+                border-radius: 50px;
+                background: #03a82d;
+                cursor: pointer;
+                transition: 0.3s;
+                &:hover{
+                    background: rgba($color: #03a82d, $alpha: 0.8)
+                }
+                .title{
+                    // border: 1px solid red;
+                    display: flex;
+                    align-items: center;
+                    .icon{
+                        font-size: 16px;
+                        // border: 1px solid red;
+
+                    }
+                    p{
+                        margin-left: 8px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .sidenavbar-top-menu-item-1{
+            margin-top: 11px;
+            ul{
+                li{
+                    display: flex;
+                    align-items: center;
+                    padding: 8px 21px;
+                    color: #ccc;
+                    text-decoration: none;
+                    vertical-align: middle;
+                    .icon{
+                        font-size: 15px;
+                        margin-right: 6px;
+                    }
+                    p{
+                        font-size: 14px;
+                        font-weight: 100;
+                    }
+                    .icon2{
+                        font-size: 13px;
+                        padding: 2px 3px;
+                        border-radius: 50%;
+                        background: #1a1a1a;
+                        font-weight: 100;
+                        margin-left: 125px;
+                        &:hover{
+                            background: #5f5d5d;
+                        }
+                    }
+                    &:hover{
+                        cursor: pointer;
+                        background: #404040;
+                    }
+                    &.active{
+                        background: #404040;
+                    }
+                }
+            }
+        }
+        .sidenavbar-top-menu-item-2{
+            margin-top: 12px;
+            ul{
+                li{
+                    display: flex;
+                    align-items: center;
+                    padding: 8px 21px;
+                    color: #ccc;
+                    text-decoration: none;
+                    vertical-align: middle;
+                    .icon{
+                        font-size: 15px;
+                        margin-right: 6px;
+                    }
+                    p{
+                        font-size: 14px;
+                        font-weight: 100;
+                    }
+                    .icon2{
+                        font-size: 13px;
+                        padding: 2px 3px;
+                        border-radius: 50%;
+                        background: #1a1a1a;
+                        font-weight: 100;
+                        margin-left: 100px;
+                        &:hover{
+                            background: #5f5d5d;
+                        }
+                    }
+                    .icon3{
+                        font-size: 13px;
+                        padding: 2px 3px;
+                        border-radius: 50%;
+                        background: #1a1a1a;
+                        font-weight: 100;
+                        margin-left: 129px;
+                        &:hover{
+                            background: #5f5d5d;
+                        }
+                    }
+                    &:hover{
+                        cursor: pointer;
+                        background: #404040;
+                    }
+                    &.active{
+                        background: #404040;
+                    }
+                }
+            }
+        }
+        .sidenavbar-top-menu-item-3{
+            // border: 1px solid red;
+            margin-top: 12px;
+            ul{
+                li{
+                    display: flex;
+                    align-items: center;
+                    padding: 8px 21px;
+                    color: #ccc;
+                    text-decoration: none;
+                    vertical-align: middle;
+                    .icon{
+                        font-size: 15px;
+                        margin-right: 6px;
+                    }
+                    p{
+                        font-size: 14px;
+                        font-weight: 100;
+                    }
+                    &:hover{
+                        cursor: pointer;
+                        background: #404040;
+                    }
+                    &.active{
+                        background: #404040;
+                    }
+                }
+            }
+        }
+    .sidenavbar-bottom{
+        margin-bottom: 10px;
+
+        .sidenavbar-bottom-need-help{
+            border-top: 1px solid #acacac;
+            padding: 10px 13px 0px 13px;
+        
+            .upgrade{
+                border: 1px solid #e99d11;
+                padding: 10px 15px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 9px 0px 12px 0px;
+                border-radius: 5px;
+                color: #e99d11;
+                font-size: 14px;
+                font-weight: 700;
+                cursor: pointer;
+
+                .icon{
+                    padding: 3px 3.5px;
+                    border-radius: 50%;
+                    font-size: 9px;
+                    background: #e99d11;
+                    color: #101010;
+                    margin-right: 6px;
+                }
+            }
+        }
+        .start{
+            padding: 8px 21px;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            .icon{
+                margin-right: 6px;
+                font-size: 15px;
+            }
+            &:hover{
+                cursor: pointer;
+                background: #404040;
+            }
+            &.active{
+                background: #404040;
+            }
+        }
+    
+ }
+}
